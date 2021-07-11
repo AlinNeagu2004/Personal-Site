@@ -3,7 +3,7 @@ body {
 }
 
 #top-container {
-  background-color: #E4F9F5;
+  background-color: #dffbff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ body {
 }
 
 .cloud {
-  max-width: 8%;
+  max-width: 15%;
 }
 
 .mountain {
