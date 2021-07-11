@@ -1,20 +1,27 @@
+/* GENERAL */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
 
+figure {
+  margin: 0;
+}
+
+/* TOP CONTAINER */
+
 #top-container {
-  background-color: #dffbff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 100%;
 }
 
-.cloud {
-  max-width: 15%;
+#top-container .cloud1 {
+  width: 10%;
 }
 
-.mountain {
-  max-width: 50%;
-  align-self: center;
+#top-container .cloud2 {
+  width: 10%;
 }
