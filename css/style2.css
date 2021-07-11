@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --top: #dffbff;
+}
+
 body {
   margin: 0;
 }
@@ -16,27 +20,47 @@ figure {
 /* TOP CONTAINER */
 
 #top-container {
+  background-color: var(--top);
   height: 100vh;
   margin: 0 auto;
-  display: grid;
-  align-content: center;
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: column;
 }
 
 #top-container .cloud1 {
   width: 10%;
-  display: inline;
 }
 
 #top-container .cloud2 {
   width: 10%;
-  display: inline;
 }
 
 #top-container .mountain {
-  max-width: 50em;
+  max-width: 60em;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
 }
 
-#top-container h1, p {
-  display: inline;
+#top-container div {
+  text-align: center;
 }
+
+#top-container h1 {
+  font-family: 'Clicker Script', cursive;
+  font-weight: 400;
+  font-size: 5.625rem;
+}
+
+#top-container span{
+  font-size: 8rem;
+}
+
+#top-container h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
