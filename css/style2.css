@@ -6,7 +6,8 @@
 }
 
 :root {
-  --top: #dffbff;
+  --clr-top: #dffbff;
+  --clr-heading: #698E71
 }
 
 body {
@@ -20,7 +21,7 @@ figure {
 /* TOP CONTAINER */
 
 #top-container {
-  background-color: var(--top);
+  background-color: var(--clr-top);
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -45,14 +46,18 @@ figure {
   margin: 0 auto;
 }
 
-#top-container div {
+#top-container h1,h2 {
   text-align: center;
+  color: var(--clr-heading);
 }
 
 #top-container h1 {
   font-family: 'Clicker Script', cursive;
   font-weight: 400;
   font-size: 5.625rem;
+  margin: 0;
+  position: sticky;
+  top: .5em;
 }
 
 #top-container span{
@@ -61,6 +66,10 @@ figure {
 
 #top-container h2 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  position: sticky;
+  top: 7.5em;
 }
 
 
