@@ -2,6 +2,7 @@
 
 *, *:before, *:after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,13 +16,27 @@ figure {
 /* TOP CONTAINER */
 
 #top-container {
-  height: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  align-content: center;
+  grid-auto-flow: row;
 }
 
 #top-container .cloud1 {
   width: 10%;
+  display: inline;
 }
 
 #top-container .cloud2 {
   width: 10%;
+  display: inline;
+}
+
+#top-container .mountain {
+  max-width: 50em;
+}
+
+#top-container h1, p {
+  display: inline;
 }
