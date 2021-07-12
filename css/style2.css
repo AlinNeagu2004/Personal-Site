@@ -58,6 +58,12 @@ main img {
   transform: translate3d(-50%, 0, 1px);
 }
 
+#top-container div {
+  margin-top: 10vh;
+  position: sticky;
+  top: .5em;
+}
+
 #top-container h1 {
   text-align: center;
   font-family: 'Clicker Script', cursive;
@@ -79,6 +85,4 @@ main img {
   font-weight: 500;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin: 0;
-  position: sticky;
-  top: 8.5em;
 }
