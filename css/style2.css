@@ -2,12 +2,12 @@
 
 *, *:before, *:after {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 :root {
   --clr-top: #dffbff;
-  --clr-heading: #698E71
+  --clr-main-heading: #698E71;
+  --clr-secondary-heading: #79A481;
 }
 
 body {
@@ -16,6 +16,14 @@ body {
 
 figure {
   margin: 0;
+}
+
+h1 {
+  color: var(--clr-main-heading);
+}
+
+h2 {
+  color: var(--clr-secondary-heading);
 }
 
 main img {
@@ -31,13 +39,13 @@ main img {
   flex-direction: column;
 }
 
-#top-container .cloud1 {
-  margin-top: 10rem;
+#top-container img[alt="cloud-img"] {
   max-width: 10em;
 }
 
-#top-container .cloud2 {
-  max-width: 10em;
+#top-container .cloud1 {
+  right: 30em;
+  top: 10em;
 }
 
 #top-container .mountain {
@@ -50,12 +58,8 @@ main img {
   transform: translate3d(-50%, 0, 1px);
 }
 
-#top-container h1,h2 {
-  text-align: center;
-  color: var(--clr-heading);
-}
-
 #top-container h1 {
+  text-align: center;
   font-family: 'Clicker Script', cursive;
   font-weight: 400;
   font-size: clamp(4.5rem, 6.5vw, 6.5rem);
@@ -70,6 +74,7 @@ main img {
 }
 
 #top-container h2 {
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
