@@ -57,7 +57,7 @@ main img {
 #top-container h1 {
   font-family: 'Clicker Script', cursive;
   font-weight: 400;
-  font-size: clamp(4rem, 6vw, 6rem);
+  font-size: clamp(4.5rem, 6.5vw, 6.5rem);
   margin: 0;
   position: sticky;
   top: .5em;
@@ -65,13 +65,13 @@ main img {
 }
 
 #top-container span{
-  font-size: clamp(4.826rem , 8.5248vw, 8.5248rem);
+  font-size: clamp(5.326rem , 9.0248vw, 9.0248rem);
 }
 
 #top-container h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: clamp();
+  font-size: 1.5rem;
   margin: 0;
   position: sticky;
   top: 7.5em;
