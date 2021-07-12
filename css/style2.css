@@ -64,6 +64,12 @@ main img {
   top: .5em;
 }
 
+
+
+/* CLAMP LA MIN FA-L MARE SA FIE SI CU MEDIA QUERY O SA-L FACI NORMAL SI PE TELEFON */
+
+
+
 #top-container h1 {
   text-align: center;
   font-family: 'Clicker Script', cursive;
