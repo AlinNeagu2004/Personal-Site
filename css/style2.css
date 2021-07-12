@@ -18,32 +18,35 @@ figure {
   margin: 0;
 }
 
+main img {
+  width: 10%;
+}
+
 /* TOP CONTAINER */
 
 #top-container {
   background-color: var(--clr-top);
   height: 100vh;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 #top-container .cloud1 {
-  width: 10%;
+  margin-top: 10rem;
+  max-width: 10em;
 }
 
 #top-container .cloud2 {
-  width: 10%;
+  max-width: 10em;
 }
 
 #top-container .mountain {
-  max-width: 60em;
+  max-width: 50em;
   display: block;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 0);
-  margin: 0 auto;
+  transform: translate(-50%);
 }
 
 #top-container h1,h2 {
@@ -54,19 +57,21 @@ figure {
 #top-container h1 {
   font-family: 'Clicker Script', cursive;
   font-weight: 400;
-  font-size: 5.625rem;
+  font-size: clamp(4rem, 6vw, 6rem);
   margin: 0;
   position: sticky;
   top: .5em;
+  word-spacing: 10px;
 }
 
 #top-container span{
-  font-size: 8rem;
+  font-size: clamp(4.826rem , 8.5248vw, 8.5248rem);
 }
 
 #top-container h2 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: clamp();
   margin: 0;
   position: sticky;
   top: 7.5em;
