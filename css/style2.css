@@ -47,6 +47,7 @@ main img {
   left: 50%;
   bottom: 0;
   transform: translate(-50%);
+  transform: translate3d(-50%, 0, 1px);
 }
 
 #top-container h1,h2 {
@@ -59,9 +60,9 @@ main img {
   font-weight: 400;
   font-size: clamp(4.5rem, 6.5vw, 6.5rem);
   margin: 0;
-  position: sticky;
-  top: .5em;
   word-spacing: 10px;
+  position: sticky;
+  top: 0.5em;
 }
 
 #top-container span{
@@ -74,7 +75,5 @@ main img {
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin: 0;
   position: sticky;
-  top: 7.5em;
+  top: 8.5em;
 }
-
-
