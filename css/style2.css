@@ -42,17 +42,18 @@ main img {
 #top-container .cloud1 {
   max-width: 12em;
   position: absolute;
-  top: 10vh;
+  top: 9vh;
   left: -200px;
-  animation: wind 50s 25s linear infinite;
+  animation: wind 40s 10s linear infinite;
   opacity: .9;
 }
 
 #top-container .cloud2 {
   max-width: 12em;
   position: absolute;
-  top: 10vh;
-  animation: wind 50s linear infinite;
+  top: 9vh;
+  left: -200px;
+  animation: wind 35s 3s linear infinite;
   opacity: .9;
 }
 
@@ -61,7 +62,7 @@ main img {
   position: absolute;
   top: 35vh;
   left: -200px;
-  animation: wind 30s 40s linear infinite;
+  animation: wind 30s 15s linear infinite;
   opacity: .9;
 }
 
@@ -70,7 +71,7 @@ main img {
   position: absolute;
   top: 35vh;
   left: -200px;
-  animation: wind 30s 20s linear infinite;
+  animation: wind 30s linear infinite;
   opacity: .9;
 }
 
