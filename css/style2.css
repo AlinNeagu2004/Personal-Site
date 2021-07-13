@@ -40,12 +40,19 @@ main img {
 }
 
 #top-container img[alt="cloud-img"] {
-  max-width: 10em;
+  max-width: 12em;
 }
 
 #top-container .cloud1 {
-  right: 30em;
-  top: 10em;
+  position: absolute;
+  top: 10vh;
+  right: 15vw;
+}
+
+#top-container .cloud2 {
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
 }
 
 #top-container .mountain {
@@ -59,14 +66,16 @@ main img {
 }
 
 #top-container div {
-  margin-top: 10vh;
+  margin-top: 15vh;
   position: sticky;
   top: .5em;
 }
 
 
-
-/* CLAMP LA MIN FA-L MARE SA FIE SI CU MEDIA QUERY O SA-L FACI NORMAL SI PE TELEFON */
+/* FA SA ARATA BINE SI PE 4K - fa mai mare totul */
+/* MAI JOS DE 1024px TREBUIE SA FACI CU MEDIA QUERY */
+/* Heading si subheading il rezolvi cu media query */
+/* Rezolva norii de pe displayurile mici */
 
 
 
