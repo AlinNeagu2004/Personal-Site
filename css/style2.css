@@ -39,20 +39,26 @@ main img {
   flex-direction: column;
 }
 
-#top-container img[alt="cloud-img"] {
-  max-width: 12em;
-}
-
 #top-container .cloud1 {
+  max-width: 12em;
   position: absolute;
   top: 10vh;
-  right: 15vw;
+  animation: wind 50s linear infinite;
+  opacity: .9;
 }
 
 #top-container .cloud2 {
+  max-width: 11em;
   position: absolute;
   top: 35vh;
-  left: 15vw;
+  left: -200px;
+  animation: wind 50s 15s linear infinite;
+  opacity: .9;
+}
+
+@keyframes wind {
+  from { left: -200px; }
+  to { left: 100%; }
 }
 
 #top-container .mountain {
@@ -61,7 +67,6 @@ main img {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%);
   transform: translate3d(-50%, 0, 1px);
 }
 
