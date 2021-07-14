@@ -54,7 +54,7 @@ main img {
   position: absolute;
   top: 9vh;
   left: -200px;
-  animation: wind1 40s 3s linear infinite;
+  animation: wind 40s 3s linear infinite;
   opacity: .9;
   user-select: none;
 }
@@ -64,7 +64,7 @@ main img {
   position: absolute;
   top: 35vh;
   left: -200px;
-  animation: wind1 30s 10s linear infinite;
+  animation: wind 30s 10s linear infinite;
   opacity: .9;
   user-select: none;
 }
@@ -74,12 +74,12 @@ main img {
   position: absolute;
   top: 35vh;
   left: -200px;
-  animation: wind1 30s linear infinite;
+  animation: wind 30s linear infinite;
   opacity: .9;
   user-select: none;
 }
 
-@keyframes wind1 {
+@keyframes wind {
   from { left: -200px; }
   to { left: 100%; }
 }
@@ -134,30 +134,30 @@ main img {
 @media screen and (max-width: 600px) {
 
   #top-container .cloud1 {
-    max-width: 5em;
+    max-width: 7em;
     margin-top: 11vh;
-    animation: wind 35s 20s linear infinite;
+    animation: wind2 35s 20s linear infinite;
   }
 
   #top-container .cloud2 {
     max-width: 7em;
     margin-top: 11vh;
-    animation: wind 35s 3s linear infinite;
+    animation: wind2 35s 3s linear infinite;
   }
 
   #top-container .cloud3 {
     max-width: 6em;
     margin-top: 18vh;
-    animation: wind 25s 12s linear infinite;
+    animation: wind2 25s 12s linear infinite;
   }
 
   #top-container .cloud4 {
     max-width: 6em;
     margin-top: 18vh;
-    animation: wind 25s linear infinite;
+    animation: wind2 25s linear infinite;
   }
 
-  @keyframes wind {
+  @keyframes wind2 {
   from { left: -120px; }
   to { left: 100%; }
   }
