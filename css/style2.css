@@ -54,7 +54,7 @@ main img {
   position: absolute;
   top: 9vh;
   left: -200px;
-  animation: wind 40s 3s linear infinite;
+  animation: wind1 40s 3s linear infinite;
   opacity: .9;
   user-select: none;
 }
@@ -64,7 +64,7 @@ main img {
   position: absolute;
   top: 35vh;
   left: -200px;
-  animation: wind 30s 10s linear infinite;
+  animation: wind1 30s 10s linear infinite;
   opacity: .9;
   user-select: none;
 }
@@ -74,12 +74,12 @@ main img {
   position: absolute;
   top: 35vh;
   left: -200px;
-  animation: wind 30s linear infinite;
+  animation: wind1 30s linear infinite;
   opacity: .9;
   user-select: none;
 }
 
-@keyframes wind {
+@keyframes wind1 {
   from { left: -200px; }
   to { left: 100%; }
 }
