@@ -44,8 +44,9 @@ main img {
   position: absolute;
   top: 9vh;
   left: -200px;
-  animation: wind 40s 10s linear infinite;
+  animation: wind 40s 15s linear infinite;
   opacity: .9;
+  user-select: none;
 }
 
 #top-container .cloud2 {
@@ -53,8 +54,9 @@ main img {
   position: absolute;
   top: 9vh;
   left: -200px;
-  animation: wind 35s 3s linear infinite;
+  animation: wind 40s 3s linear infinite;
   opacity: .9;
+  user-select: none;
 }
 
 #top-container .cloud3 {
@@ -62,8 +64,9 @@ main img {
   position: absolute;
   top: 35vh;
   left: -200px;
-  animation: wind 30s 15s linear infinite;
+  animation: wind 30s 10s linear infinite;
   opacity: .9;
+  user-select: none;
 }
 
 #top-container .cloud4 {
@@ -73,6 +76,7 @@ main img {
   left: -200px;
   animation: wind 30s linear infinite;
   opacity: .9;
+  user-select: none;
 }
 
 @keyframes wind {
@@ -87,6 +91,7 @@ main img {
   left: 50%;
   bottom: 0;
   transform: translate3d(-50%, 0, 1px);
+  user-select: none;
 }
 
 #top-container div {
@@ -96,7 +101,7 @@ main img {
 }
 
 
-
+/* MEDIA QUERY PE LANDSCAPE */
 /* INAINTE SA TE DUCI PE REZOLUTII DE LA TABLETE IN JOS FA TOTUL SA ARATE BINE PE 4K (FA TOTUL MAI MARE CU MEDIA QUERY), SI CAND MUNTELE INCEPE SA SE FACA MAI MIC (FOLOSES-TE PANA JOS HEIGHT-UL DE LA BROWSER SI AI SA VEZI) FA SA ARATA BINE */
 /* PE TABLETE ARATA FOARTE BINE.. MAI JOS DE TABLETE TREBUIE SA FACI CU MEDIA QUERY */
 /* Heading si subheading il rezolvi cu media query CA SA FI CENTRAT LA PROBLEMA CAND MUNTELE INCEPE SA SE FACA MIC CAND HEIGHT-UL LA BROWSER ESTE FULL SI SA REZOLVI FONT SIZE-UL DE PE DISPLAY-URILE MAI JOS DE TABLETE */
@@ -126,8 +131,36 @@ main img {
   margin: 0;
 }
 
-@media screen and (max-width: 499px) {
-  #top-container .cloud1
+@media screen and (max-width: 600px) {
+
+  #top-container .cloud1 {
+    max-width: 5em;
+    margin-top: 11vh;
+    animation: wind 35s 20s linear infinite;
+  }
+
+  #top-container .cloud2 {
+    max-width: 7em;
+    margin-top: 11vh;
+    animation: wind 35s 3s linear infinite;
+  }
+
+  #top-container .cloud3 {
+    max-width: 6em;
+    margin-top: 18vh;
+    animation: wind 25s 12s linear infinite;
+  }
+
+  #top-container .cloud4 {
+    max-width: 6em;
+    margin-top: 18vh;
+    animation: wind 25s linear infinite;
+  }
+
+  @keyframes wind {
+  from { left: -120px; }
+  to { left: 100%; }
+  }
 
   #top-container div {
     margin-top: 30vh;
