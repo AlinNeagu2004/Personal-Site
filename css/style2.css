@@ -125,3 +125,27 @@ main img {
   font-size: clamp(1.3rem, 1.5vw, 1.5rem);
   margin: 0;
 }
+
+@media screen and (max-width: 499px) {
+  #top-container .cloud1
+
+  #top-container div {
+    margin-top: 30vh;
+    position: sticky;
+    top: .2em;
+  }
+
+  #top-container h1 {
+    font-size: 4rem;
+    position: sticky;
+    top: .2em;
+  }
+
+  #top-container span {
+    font-size: 4.7336rem;
+  }
+
+  #top-container h2 {
+    font-size: 0.866rem;
+  }
+}
