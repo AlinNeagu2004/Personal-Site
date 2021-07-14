@@ -34,7 +34,7 @@ main img {
 
 #top-container {
   background-color: var(--clr-top);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
