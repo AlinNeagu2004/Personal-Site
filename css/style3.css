@@ -1,0 +1,74 @@
+img[alt="cloud-img"] {
+  width: 10em;
+}
+
+body {
+  margin: 0;
+}
+
+.top-container {
+  background: rgb(223,251,255);
+  background: linear-gradient(180deg, rgba(223,251,255,1) 70%, rgba(255,255,255,1) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* pe displayuri mici un font size si nu clamp + fa rezolutia sa fie 5rem*/
+
+h1 {
+  color: #658E6E;
+  font-family: 'Clicker Script', cursive;
+  font-weight: 500;
+  font-size: 4.9rem;
+  margin-bottom: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0.5em;
+}
+
+.big-letter {
+
+}
+
+h2 {
+  color: #75A47C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.headings-container {
+  margin: 0;
+  text-align: center;
+  order: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: .5em;
+  transform: translateY(-1px);
+  margin-top: 25vh;
+}
+
+.cloud1 {
+  position: absolute;
+}
+
+.cloud2 {
+  position: absolute;
+}
+
+.cloud3 {
+  position: absolute;
+}
+
+.cloud4 {
+  position: absolute;
+}
+
+.mountain {
+ order: 2;
+ max-width: 50em;
+ align-self: center;
+ margin-top: auto;
+ transform: perspective(50em) translateY(2px);
+}

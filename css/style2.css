@@ -134,7 +134,7 @@ main img {
 
   #top-container {
   background-color: var(--clr-top);
-
+  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   }
