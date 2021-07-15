@@ -34,7 +34,7 @@ main img {
 
 #top-container {
   background-color: var(--clr-top);
-  min-height: -webkit-fill-available;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
@@ -130,7 +130,14 @@ main img {
   margin: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+
+  #top-container {
+  background-color: var(--clr-top);
+
+  display: flex;
+  flex-direction: column;
+  }
 
   #top-container .cloud1 {
     max-width: 7em;
