@@ -15,6 +15,7 @@ body {
 }
 
 h1 {
+  margin: 0;
   color: #658E6E;
   font-family: 'Clicker Script', cursive;
   font-weight: 500;
@@ -30,6 +31,7 @@ h1 {
 }
 
 h2 {
+  margin: 0;
   color: #75A47C;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
@@ -45,8 +47,8 @@ h2 {
   top: .5em;
   transform: translateY(-1px);
   margin-top: 25vh;
-  /* SOLVE THIS PROBLEM SOMEHOW */
-  margin-bottom: 15vh;
+  /* SOLVE THIS PROBLEM BY ADDING A FOG OR CLOUDS */
+  margin-bottom: 13vh;
 }
 
 /* ANIMATION AND SOLVE THE PROBLEM WHEN THEY REACH THE RIGHT DISPLAY */
