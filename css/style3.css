@@ -14,8 +14,6 @@ body {
   flex-direction: column;
 }
 
-/* pe displayuri mici un font size si nu clamp + fa rezolutia sa fie 5rem*/
-
 h1 {
   color: #658E6E;
   font-family: 'Clicker Script', cursive;
@@ -47,7 +45,11 @@ h2 {
   top: .5em;
   transform: translateY(-1px);
   margin-top: 25vh;
+  /* SOLVE THIS PROBLEM SOMEHOW */
+  margin-bottom: 15vh;
 }
+
+/* ANIMATION AND SOLVE THE PROBLEM WHEN THEY REACH THE RIGHT DISPLAY */
 
 .cloud1 {
   position: absolute;
@@ -68,7 +70,8 @@ h2 {
 .mountain {
  order: 2;
  max-width: 50em;
- align-self: center;
- margin-top: auto;
- transform: perspective(50em) translateY(2px);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate3d(-50%, 0, 1px);
 }
