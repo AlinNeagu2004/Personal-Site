@@ -7,8 +7,8 @@ body {
 }
 
 .top-container {
-  background: rgb(223,251,255);
-  background: linear-gradient(180deg, rgba(223,251,255,1) 70%, rgba(255,255,255,1) 100%);
+background: rgb(223,251,255);
+background: linear-gradient(180deg, rgba(223,251,255,1) 0%, rgba(255,255,255,1) 60%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -47,8 +47,7 @@ h2 {
   top: .5em;
   transform: translateY(-1px);
   margin-top: 25vh;
-  /* SOLVE THIS PROBLEM BY ADDING A FOG OR CLOUDS */
-  margin-bottom: 13vh;
+  margin-bottom: 15vh;
 }
 
 /* ANIMATION AND SOLVE THE PROBLEM WHEN THEY REACH THE RIGHT DISPLAY */
