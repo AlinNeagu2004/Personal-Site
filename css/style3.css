@@ -1,8 +1,8 @@
 /* GENERAL */
 
 :root {
-  --clr-main-heading: #658e6e;
-  --clr-secondary-heading: #75a47c;
+  --clr-main-heading: #6ba576;
+  --clr-secondary-heading: #6ba576;
 }
 
 body,
@@ -39,7 +39,6 @@ h2 {
 
 #top-container h1 {
   margin: 0;
-  color: #658e6e;
   font-family: "Clicker Script", cursive;
   font-weight: 500;
   font-size: 4.5rem;
@@ -56,7 +55,6 @@ h2 {
 
 #top-container h2 {
   margin: 0;
-  color: #75a47c;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 600;
@@ -107,14 +105,7 @@ h2 {
 
 @media (max-width: 375px) {
   #top-container .headings-container {
-    margin: 0;
-    text-align: center;
-    order: 1;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
-    transform: translateY(-1px);
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 10vh;
   }
 
@@ -145,31 +136,12 @@ h2 {
   }
 
   #top-container .headings-container {
-    margin: 0;
-    text-align: center;
-    order: 1;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
-    transform: translateY(-1px);
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
 }
 
 @media (min-width: 500px) {
-  #top-container {
-    background: rgb(223, 251, 255);
-    background: linear-gradient(
-      180deg,
-      rgba(223, 251, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 50%
-    );
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
   #top-container .mountain-lg {
     display: inline;
     order: 2;
@@ -181,15 +153,7 @@ h2 {
   }
 
   #top-container h1 {
-    margin: 0;
-    color: #658e6e;
-    font-family: "Clicker Script", cursive;
-    font-weight: 500;
     font-size: 5rem;
-    margin-bottom: 10px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
   }
 
   #top-container .big-letter {
@@ -197,22 +161,11 @@ h2 {
   }
 
   #top-container h2 {
-    margin: 0;
-    color: #75a47c;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.2em;
   }
 
   #top-container .headings-container {
-    margin: 0;
-    text-align: center;
-    order: 1;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
-    transform: translateY(-1px);
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 }
 
@@ -244,15 +197,7 @@ h2 {
   }
 
   #top-container h1 {
-    margin: 0;
-    color: #658e6e;
-    font-family: "Clicker Script", cursive;
-    font-weight: 500;
     font-size: 6rem;
-    margin-bottom: 10px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
   }
 
   #top-container .big-letter {
@@ -260,42 +205,15 @@ h2 {
   }
 
   #top-container h2 {
-    margin: 0;
-    color: #75a47c;
-    font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
-    font-weight: 500;
   }
 
   #top-container .headings-container {
-    margin: 0;
-    text-align: center;
-    order: 1;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
-    transform: translateY(-1px);
     margin-top: 15vh;
   }
 }
 
 @media (min-width: 992px) {
-  #top-container {
-    background: rgb(223, 251, 255);
-    background: linear-gradient(
-      180deg,
-      rgba(223, 251, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 70%
-    );
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #top-container .mountain-sm {
-    display: none;
-  }
-
   #top-container .mountain-lg {
     display: inline;
     order: 2;
@@ -307,15 +225,7 @@ h2 {
   }
 
   #top-container h1 {
-    margin: 0;
-    color: #658e6e;
-    font-family: "Clicker Script", cursive;
-    font-weight: 500;
     font-size: clamp(6rem, 6.5vw, 6.5rem);
-    margin-bottom: 10px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
   }
 
   #top-container .big-letter {
@@ -323,46 +233,19 @@ h2 {
   }
 
   #top-container h2 {
-    margin: 0;
-    color: #75a47c;
-    font-family: "Montserrat", sans-serif;
     font-size: clamp(1.3rem, 1.5vw, 1.5rem);
-    font-weight: 500;
-  }
-
-  #top-container .headings-container {
-    margin: 0;
-    text-align: center;
-    order: 1;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0.5em;
-    transform: translateY(-1px);
-    margin-top: 15vh;
   }
 }
 
 @media (min-width: 1200px) {
   #top-container .mountain-lg {
-    display: inline;
-    order: 2;
     max-width: 55em;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate3d(-50%, 0, 1px);
   }
 }
 
 @media (min-width: 1920px) {
   #top-container .mountain-lg {
-    display: inline;
-    order: 2;
     max-width: calc(45vw + 2rem);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate3d(-50%, 0, 1px);
   }
 
   #top-container h1 {
@@ -398,7 +281,7 @@ h2 {
   #top-container .mountain-lg {
     display: inline;
     order: 2;
-    max-width: 35em;
+    max-width: 30em;
     position: absolute;
     left: 50%;
     bottom: -100vh;
