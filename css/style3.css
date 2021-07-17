@@ -7,8 +7,8 @@ body {
 }
 
 .top-container {
-background: rgb(223,251,255);
-background: linear-gradient(180deg, rgba(223,251,255,1) 0%, rgba(255,255,255,1) 60%);
+  background: rgb(223,251,255);
+  background: linear-gradient(180deg, rgba(223,251,255,1) 0%, rgba(255,255,255,1) 60%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -75,4 +75,35 @@ h2 {
   left: 50%;
   bottom: 0;
   transform: translate3d(-50%, 0, 1px);
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .top-container {
+    background: rgb(223,251,255);
+    background: linear-gradient(180deg, rgba(223,251,255,1) 0%, rgba(255,255,255,1) 60%);
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mountain {
+    order: 2;
+    max-width: 30em;
+    position: absolute;
+    left: 50%;
+    bottom: -100vh;
+    transform: translate3d(-50%, 0, 1px);
+  }
+
+  .headings-container {
+  margin: 0;
+  text-align: center;
+  order: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: .5em;
+  transform: translateY(-1px);
+  margin-top: 25vh;
+  margin-bottom: 20vh;
+}
 }
