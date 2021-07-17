@@ -1,92 +1,121 @@
+/* GENERAL */
+
+:root {
+  --clr-main-heading: #658e6e;
+  --clr-secondary-heading: #75a47c;
+}
+
+body,
+figure {
+  margin: 0;
+}
+
 img[alt="cloud-img"] {
   width: 10em;
 }
 
-body {
-  margin: 0;
+main img {
+  width: 10em;
 }
 
-.top-container {
-  background: rgb(223,251,255);
-  background: linear-gradient(180deg, rgba(223,251,255,1) 0%, rgba(255,255,255,1) 60%);
+h1 {
+  color: var(--clr-main-heading);
+}
+
+h2 {
+  color: var(--clr-secondary-heading);
+}
+
+/* TOP CONTAINER */
+
+#top-container {
+  background: rgb(223, 251, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 251, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-h1 {
+#top-container h1 {
   margin: 0;
-  color: #658E6E;
-  font-family: 'Clicker Script', cursive;
+  color: #658e6e;
+  font-family: "Clicker Script", cursive;
   font-weight: 500;
-  font-size: 4.9rem;
+  font-size: 5rem;
   margin-bottom: 10px;
   position: -webkit-sticky;
   position: sticky;
   top: 0.5em;
 }
 
-.big-letter {
-
+#top-container .big-letter {
 }
 
-h2 {
+#top-container h2 {
   margin: 0;
-  color: #75A47C;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1em;
+  color: #75a47c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
-.headings-container {
+#top-container .headings-container {
   margin: 0;
   text-align: center;
   order: 1;
   position: -webkit-sticky;
   position: sticky;
-  top: .5em;
+  top: 0.5em;
   transform: translateY(-1px);
-  margin-top: 25vh;
+  margin-top: 20vh;
   margin-bottom: 15vh;
 }
 
 /* ANIMATION AND SOLVE THE PROBLEM WHEN THEY REACH THE RIGHT DISPLAY */
 
-.cloud1 {
+#top-container .cloud1 {
   position: absolute;
 }
 
-.cloud2 {
+#top-container .cloud2 {
   position: absolute;
 }
 
-.cloud3 {
+#top-container .cloud3 {
   position: absolute;
 }
 
-.cloud4 {
+#top-container .cloud4 {
   position: absolute;
 }
 
-.mountain {
- order: 2;
- max-width: 50em;
+#top-container .mountain {
+  order: 2;
+  max-width: 50em;
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate3d(-50%, 0, 1px);
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
-  .top-container {
-    background: rgb(223,251,255);
-    background: linear-gradient(180deg, rgba(223,251,255,1) 0%, rgba(255,255,255,1) 60%);
+@media (max-width: 850px) and (orientation: landscape) {
+  #top-container {
+    background: rgb(223, 251, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(223, 251, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
     min-height: 200vh;
     display: flex;
     flex-direction: column;
   }
 
-  .mountain {
+  #top-container .mountain {
     order: 2;
     max-width: 30em;
     position: absolute;
@@ -95,15 +124,59 @@ h2 {
     transform: translate3d(-50%, 0, 1px);
   }
 
-  .headings-container {
-  margin: 0;
-  text-align: center;
-  order: 1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: .5em;
-  transform: translateY(-1px);
-  margin-top: 25vh;
-  margin-bottom: 20vh;
+  #top-container .headings-container {
+    margin: 0;
+    text-align: center;
+    order: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.5em;
+    transform: translateY(-1px);
+    margin-top: 25vh;
+    margin-bottom: 20vh;
+  }
 }
+
+@media (max-width: 375px) {
+  #top-container .headings-container {
+    margin: 0;
+    text-align: center;
+    order: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.5em;
+    transform: translateY(-1px);
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+
+  #top-container h1 {
+    font-size: 4rem;
+  }
+
+  #top-container h2 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 300px) {
+  #top-container h1 {
+    font-size: 3.5rem;
+  }
+
+  #top-container h2 {
+    font-size: 0.8rem;
+  }
+
+  #top-container .headings-container {
+    margin: 0;
+    text-align: center;
+    order: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.5em;
+    transform: translateY(-1px);
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
 }
