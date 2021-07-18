@@ -262,7 +262,7 @@ h2 {
   }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 1024px) and (orientation: landscape) {
   #top-container {
     background: rgb(223, 251, 255);
     background: linear-gradient(
@@ -309,7 +309,7 @@ h2 {
     position: sticky;
     top: 0.5em;
     transform: translateY(-1px);
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-bottom: 20vh;
   }
 }
