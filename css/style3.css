@@ -110,15 +110,15 @@ h2 {
   }
 
   #top-container h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   #top-container .big-letter {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   #top-container h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -145,11 +145,15 @@ h2 {
   #top-container .mountain-lg {
     display: inline;
     order: 2;
-    max-width: 50em;
+    max-width: 37em;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate3d(-50%, 0, 1px);
+  }
+
+  #top-container .mountain-sm {
+    display: none;
   }
 
   #top-container h1 {
@@ -182,14 +186,9 @@ h2 {
     flex-direction: column;
   }
 
-  #top-container .mountain-sm {
-    display: none;
-  }
-
   #top-container .mountain-lg {
     display: inline;
     order: 2;
-    max-width: 45em;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -218,7 +217,6 @@ h2 {
   #top-container .mountain-lg {
     display: inline;
     order: 2;
-    max-width: 45em;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -262,7 +260,7 @@ h2 {
   }
 }
 
-@media (max-height: 1025px) and (orientation: landscape) {
+@media (max-height: 500px) {
   #top-container {
     background: rgb(223, 251, 255);
     background: linear-gradient(
@@ -309,7 +307,7 @@ h2 {
     position: sticky;
     top: 0.5em;
     transform: translateY(-1px);
-    margin-top: 10vh;
+    margin-top: 12vh;
     margin-bottom: 20vh;
   }
 }
