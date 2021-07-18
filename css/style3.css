@@ -275,11 +275,11 @@ h2 {
     flex-direction: column;
   }
 
-  #top-container .mountain-sm {
+  #top-container .mountain-lg {
     display: none;
   }
 
-  #top-container .mountain-lg {
+  #top-container .mountain-sm {
     display: inline;
     order: 2;
     max-width: 30em;
