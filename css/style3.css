@@ -10,8 +10,11 @@ figure {
   margin: 0;
 }
 
-img[alt="cloud-img"],
 main img {
+  width: 10em;
+}
+
+img[alt="cloud-img"] {
   width: 10em;
 }
 
@@ -41,7 +44,7 @@ h2 {
   margin: 0;
   font-family: "Clicker Script", cursive;
   font-weight: 500;
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin-bottom: 10px;
   position: -webkit-sticky;
   position: sticky;
@@ -50,13 +53,13 @@ h2 {
 }
 
 #top-container .big-letter {
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 
 #top-container h2 {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
 }
 
@@ -72,24 +75,6 @@ h2 {
   margin-bottom: 15vh;
 }
 
-/* ANIMATION AND SOLVE THE PROBLEM WHEN THEY REACH THE RIGHT DISPLAY */
-
-#top-container .cloud1 {
-  position: absolute;
-}
-
-#top-container .cloud2 {
-  position: absolute;
-}
-
-#top-container .cloud3 {
-  position: absolute;
-}
-
-#top-container .cloud4 {
-  position: absolute;
-}
-
 #top-container .mountain-sm {
   order: 2;
   max-width: 50em;
@@ -101,6 +86,48 @@ h2 {
 
 #top-container .mountain-lg {
   display: none;
+}
+
+#top-container .cloud1,
+.cloud3 {
+  display: none;
+}
+
+#top-container .cloud2 {
+  width: 8em;
+  position: absolute;
+  opacity: 0;
+  margin-top: 10vh;
+  animation: wind-sm 30s 10s linear infinite;
+}
+
+#top-container .cloud4 {
+  width: 8em;
+  position: absolute;
+  opacity: 0.9;
+  margin-top: 35vh;
+  animation: wind-sm 20s linear infinite;
+}
+
+@keyframes wind-sm {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+
+  3% {
+    opacity: 0.9;
+  }
+
+  97% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0;
+    left: 60vw;
+    right: 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -120,6 +147,48 @@ h2 {
   #top-container h2 {
     font-size: 0.8rem;
   }
+
+  #top-container .cloud1,
+  .cloud3 {
+    display: none;
+  }
+
+  #top-container .cloud2 {
+    width: 8em;
+    position: absolute;
+    opacity: 0;
+    margin-top: 5vh;
+    animation: wind-sm 30s 10s linear infinite;
+  }
+
+  #top-container .cloud4 {
+    width: 8em;
+    position: absolute;
+    opacity: 0.9;
+    margin-top: 30vh;
+    animation: wind-sm 20s linear infinite;
+  }
+
+  @keyframes wind-sm {
+    0% {
+      opacity: 0;
+      left: 0;
+    }
+
+    3% {
+      opacity: 0.9;
+    }
+
+    97% {
+      opacity: 0.9;
+    }
+
+    100% {
+      opacity: 0;
+      left: 60vw;
+      right: 0;
+    }
+  }
 }
 
 @media (max-width: 300px) {
@@ -138,6 +207,41 @@ h2 {
   #top-container .headings-container {
     margin-top: 10vh;
     margin-bottom: 10vh;
+  }
+
+  #top-container .cloud1,
+  .cloud2,
+  .cloud3 {
+    display: none;
+  }
+
+  #top-container .cloud4 {
+    width: 8em;
+    position: absolute;
+    opacity: 0.9;
+    margin-top: 30vh;
+    animation: wind-sm 20s linear infinite;
+  }
+
+  @keyframes wind-sm {
+    0% {
+      opacity: 0;
+      left: 0;
+    }
+
+    3% {
+      opacity: 0.9;
+    }
+
+    97% {
+      opacity: 0.9;
+    }
+
+    100% {
+      opacity: 0;
+      left: 50vw;
+      right: 0;
+    }
   }
 }
 
@@ -309,5 +413,39 @@ h2 {
     transform: translateY(-1px);
     margin-top: 12vh;
     margin-bottom: 20vh;
+  }
+
+  #top-container .cloud1,
+  .cloud2,
+  .cloud3 {
+    display: none;
+  }
+
+  #top-container .cloud4 {
+    position: absolute;
+    opacity: 0.9;
+    margin-top: 60vh;
+    animation: wind-sm 30s linear infinite;
+  }
+
+  @keyframes wind-sm {
+    0% {
+      opacity: 0;
+      left: 0;
+    }
+
+    3% {
+      opacity: 0.9;
+    }
+
+    97% {
+      opacity: 0.9;
+    }
+
+    100% {
+      opacity: 0;
+      left: 80%;
+      right: 0;
+    }
   }
 }
