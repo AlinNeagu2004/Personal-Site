@@ -1,8 +1,8 @@
 /* GENERAL */
 
 :root {
-  --clr-main-heading: #6ba576;
-  --clr-secondary-heading: #6ba576;
+  --clr-main-heading: #4ab29b;
+  --clr-secondary-heading: #4ab29b;
 }
 
 body,
@@ -12,10 +12,17 @@ figure {
 
 main img {
   width: 10em;
+  user-select: none;
 }
 
 img[alt="cloud-img"] {
   width: 10em;
+  user-select: none;
+}
+
+img.mountain-lg,
+.mountain-sm {
+  user-select: none;
 }
 
 h1 {
