@@ -14,10 +14,6 @@ main img {
   width: 10em;
 }
 
-img[alt="cloud-img"] {
-  width: 10em;
-}
-
 h1 {
   color: var(--clr-main-heading);
 }
@@ -75,61 +71,6 @@ h2 {
   margin-bottom: 15vh;
 }
 
-#top-container .mountain-sm {
-  order: 2;
-  max-width: 50em;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate3d(-50%, 0, 1px);
-}
-
-#top-container .mountain-lg {
-  display: none;
-}
-
-#top-container .cloud1,
-.cloud3 {
-  display: none;
-}
-
-#top-container .cloud2 {
-  width: 8em;
-  position: absolute;
-  opacity: 0;
-  margin-top: 10vh;
-  animation: wind-sm 30s 10s linear infinite;
-}
-
-#top-container .cloud4 {
-  width: 8em;
-  position: absolute;
-  opacity: 0.9;
-  margin-top: 35vh;
-  animation: wind-sm 20s linear infinite;
-}
-
-@keyframes wind-sm {
-  0% {
-    opacity: 0;
-    left: 0;
-  }
-
-  3% {
-    opacity: 0.9;
-  }
-
-  97% {
-    opacity: 0.9;
-  }
-
-  100% {
-    opacity: 0;
-    left: 60vw;
-    right: 0;
-  }
-}
-
 @media (max-width: 375px) {
   #top-container .headings-container {
     margin-top: 15vh;
@@ -148,46 +89,22 @@ h2 {
     font-size: 0.8rem;
   }
 
-  #top-container .cloud1,
-  .cloud3 {
+  #top-container img[alt="cloud-img"] {
     display: none;
   }
 
-  #top-container .cloud2 {
-    width: 8em;
-    position: absolute;
-    opacity: 0;
-    margin-top: 5vh;
-    animation: wind-sm 30s 10s linear infinite;
+  #top-container .mountain-lg {
+    display: none;
   }
 
-  #top-container .cloud4 {
-    width: 8em;
+  #top-container .mountain-sm {
+    display: inline;
+    order: 2;
+    max-width: 25em;
     position: absolute;
-    opacity: 0.9;
-    margin-top: 30vh;
-    animation: wind-sm 20s linear infinite;
-  }
-
-  @keyframes wind-sm {
-    0% {
-      opacity: 0;
-      left: 0;
-    }
-
-    3% {
-      opacity: 0.9;
-    }
-
-    97% {
-      opacity: 0.9;
-    }
-
-    100% {
-      opacity: 0;
-      left: 60vw;
-      right: 0;
-    }
+    left: 50%;
+    bottom: -100vh;
+    transform: translate3d(-50%, 0, 1px);
   }
 }
 
@@ -205,49 +122,34 @@ h2 {
   }
 
   #top-container .headings-container {
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 10vh;
   }
 
   #top-container .cloud1,
   .cloud2,
-  .cloud3 {
+  .cloud3,
+  .cloud4 {
     display: none;
   }
 
-  #top-container .cloud4 {
-    width: 8em;
-    position: absolute;
-    opacity: 0.9;
-    margin-top: 30vh;
-    animation: wind-sm 20s linear infinite;
+  #top-container .mountain-lg {
+    display: none;
   }
 
-  @keyframes wind-sm {
-    0% {
-      opacity: 0;
-      left: 0;
-    }
-
-    3% {
-      opacity: 0.9;
-    }
-
-    97% {
-      opacity: 0.9;
-    }
-
-    100% {
-      opacity: 0;
-      left: 50vw;
-      right: 0;
-    }
+  #top-container .mountain-sm {
+    display: inline;
+    order: 2;
+    max-width: 25em;
+    position: absolute;
+    left: 50%;
+    bottom: -100vh;
+    transform: translate3d(-50%, 0, 1px);
   }
 }
 
-@media (min-width: 500px) {
-  #top-container .mountain-lg {
-    display: inline;
+@media (min-width: 375px) {
+  #top-container .mountain-sm {
     order: 2;
     max-width: 37em;
     position: absolute;
@@ -256,24 +158,51 @@ h2 {
     transform: translate3d(-50%, 0, 1px);
   }
 
-  #top-container .mountain-sm {
+  #top-container .mountain-lg {
     display: none;
   }
 
   #top-container h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   #top-container .big-letter {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   #top-container h2 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   #top-container .headings-container {
-    margin-top: 10vh;
+    margin-top: 15vh;
+  }
+
+  #top-container .cloud1,
+  .cloud2,
+  .cloud3,
+  .cloud4 {
+    display: none;
+  }
+
+  #top-container .mountain-lg {
+    display: none;
+  }
+
+  #top-container .mountain-sm {
+    display: inline;
+    order: 2;
+    max-width: 25em;
+    position: absolute;
+    left: 50%;
+    bottom: -100vh;
+    transform: translate3d(-50%, 0, 1px);
+  }
+}
+
+@media (min-width: 600px) {
+  #top-container .mountain-lg {
+    display: none;
   }
 }
 
@@ -384,7 +313,7 @@ h2 {
   #top-container .mountain-sm {
     display: inline;
     order: 2;
-    max-width: 30em;
+    max-width: 25em;
     position: absolute;
     left: 50%;
     bottom: -100vh;
@@ -392,15 +321,15 @@ h2 {
   }
 
   #top-container h1 {
-    font-size: 5rem;
+    font-size: 4.3rem;
   }
 
   #top-container .big-letter {
-    font-size: 6rem;
+    font-size: 5.3rem;
   }
 
   #top-container h2 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   #top-container .headings-container {
@@ -416,36 +345,25 @@ h2 {
   }
 
   #top-container .cloud1,
-  .cloud2,
   .cloud3 {
     display: none;
   }
 
-  #top-container .cloud4 {
-    position: absolute;
+  #top-container .cloud2 {
+    display: inline;
+    max-width: 7em;
     opacity: 0.9;
-    margin-top: 60vh;
-    animation: wind-sm 30s linear infinite;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
   }
 
-  @keyframes wind-sm {
-    0% {
-      opacity: 0;
-      left: 0;
-    }
-
-    3% {
-      opacity: 0.9;
-    }
-
-    97% {
-      opacity: 0.9;
-    }
-
-    100% {
-      opacity: 0;
-      left: 80%;
-      right: 0;
-    }
+  #top-container .cloud4 {
+    display: inline;
+    max-width: 7em;
+    opacity: 0.9;
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
   }
 }
