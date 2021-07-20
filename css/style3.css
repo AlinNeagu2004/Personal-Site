@@ -97,20 +97,26 @@ h2 {
 
 @media (max-width: 375px) {
   #top-container .headings-container {
-    margin-top: 15vh;
+    margin-top: 12vh;
     margin-bottom: 10vh;
   }
 
   #top-container h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 600;
   }
 
   #top-container .big-letter {
-    font-size: 4rem;
+    font-size: 4.5rem;
+  }
+
+  #top-container .small-letters {
+    letter-spacing: -3px;
   }
 
   #top-container h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   #top-container .cloud1,
@@ -124,14 +130,20 @@ h2 {
 @media (max-width: 300px) {
   #top-container h1 {
     font-size: 3rem;
+    font-weight: 600;
   }
 
   #top-container .big-letter {
     font-size: 3.5rem;
   }
 
+  #top-container .small-letters {
+    letter-spacing: -3px;
+  }
+
   #top-container h2 {
     font-size: 0.8rem;
+    font-weight: 700;
   }
 
   #top-container .headings-container {
@@ -153,6 +165,18 @@ h2 {
   .cloud3,
   .cloud4 {
     display: none;
+  }
+
+  #top-container h1 {
+    font-weight: 600;
+  }
+
+  #top-container h2 {
+    font-weight: 700;
+  }
+
+  #top-container .small-letters {
+    letter-spacing: -3px;
   }
 }
 
@@ -191,7 +215,12 @@ h2 {
 
 @media (min-width: 768px) {
   #top-container {
-    background: #edfdff;
+    background: rgb(237, 253, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(237, 253, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -208,14 +237,20 @@ h2 {
 
   #top-container h1 {
     font-size: 6rem;
+    font-weight: 500;
   }
 
   #top-container .big-letter {
     font-size: 7.1004rem;
   }
 
+  #top-container .small-letters {
+    letter-spacing: 0;
+  }
+
   #top-container h2 {
     font-size: 1.3rem;
+    font-weight: 600;
   }
 
   #top-container .headings-container {
@@ -347,6 +382,13 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+  #top-container {
+    background: #edfdff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
   #top-container .headings-container {
     margin-top: 15vh;
     margin-bottom: 0;
