@@ -1,8 +1,8 @@
 /* GENERAL */
 
 :root {
-  --clr-main-heading: #4ab29b;
-  --clr-secondary-heading: #4ab29b;
+  --clr-main-heading: #57ad93;
+  --clr-secondary-heading: #57ad93;
 }
 
 body,
@@ -36,10 +36,10 @@ h2 {
 /* TOP CONTAINER */
 
 #top-container {
-  background: rgb(223, 251, 255);
+  background: rgb(237, 253, 255);
   background: linear-gradient(
     180deg,
-    rgba(223, 251, 255, 1) 0%,
+    rgba(237, 253, 255, 1) 0%,
     rgba(255, 255, 255, 1) 50%
   );
   min-height: 100vh;
@@ -191,12 +191,7 @@ h2 {
 
 @media (min-width: 768px) {
   #top-container {
-    background: rgb(223, 251, 255);
-    background: linear-gradient(
-      180deg,
-      rgba(223, 251, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 70%
-    );
+    background: #edfdff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -437,10 +432,10 @@ h2 {
 
 @media (max-height: 500px) {
   #top-container {
-    background: rgb(223, 251, 255);
+    background: rgb(237, 253, 255);
     background: linear-gradient(
       180deg,
-      rgba(223, 251, 255, 1) 0%,
+      rgba(237, 253, 255, 1) 0%,
       rgba(255, 255, 255, 1) 50%
     );
     min-height: 200vh;
