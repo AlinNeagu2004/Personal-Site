@@ -18,7 +18,8 @@ img[alt="cloud-img"] {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: var(--clr-main-heading);
 }
 
@@ -547,13 +548,28 @@ h2 {
   width: 8em;
 }
 
-#middle-container h2 {
+#middle-container h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
+#middle-container div {
+  margin: 3em 0;
+  background-color: var(--clr-main-heading);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#middle-container div h2 {
+  color: white;
+}
+
 #middle-container .hello-section {
-  margin-bottom: 4.6875em;
+  margin-bottom: 3em;
 }
 
 .hello-section p {
@@ -564,4 +580,20 @@ h2 {
   line-height: 1.5;
 }
 
+.information-section {
+  margin-bottom: 4.5em;
+}
+
+.information-section p {
+  width: 75%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 /* I'm a Web Developer and i am also known by my friends to have great impersonal and artistic skills,that helped me to possess a lot of creativity and ambition over the years. I'll be always thirsty to work and contribute as deeply as possible to a project,  because I care doing it professionally. */
+
+/* I'm going to help you to think of an idea, to design and to create as quick as a flash then publishing it online.  */
+
+/* My goal is to make the finest version of your website, that you'll love and your customers will too. */
