@@ -2,7 +2,6 @@
 
 :root {
   --clr-main-heading: #57ad93;
-  --clr-secondary-heading: #57ad93;
 }
 
 body,
@@ -10,27 +9,17 @@ figure {
   margin: 0;
 }
 
-main img {
-  width: 10em;
+img {
   user-select: none;
 }
 
 img[alt="cloud-img"] {
   width: 10em;
-  user-select: none;
 }
 
-img.mountain-lg,
-.mountain-sm {
-  user-select: none;
-}
-
-h1 {
-  color: var(--clr-main-heading);
-}
-
+h1,
 h2 {
-  color: var(--clr-secondary-heading);
+  color: var(--clr-main-heading);
 }
 
 /* TOP CONTAINER */
@@ -546,3 +535,33 @@ h2 {
     left: 10vw;
   }
 }
+
+/* MIDDLE CONTAINER */
+
+#middle-container {
+  margin: 6.24em 0;
+  text-align: center;
+}
+
+#middle-container img {
+  width: 8em;
+}
+
+#middle-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#middle-container .hello-section {
+  margin-bottom: 4.6875em;
+}
+
+.hello-section p {
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* I'm a Web Developer and i am also known by my friends to have great impersonal and artistic skills,that helped me to possess a lot of creativity and ambition over the years. I'll be always thirsty to work and contribute as deeply as possible to a project,  because I care doing it professionally. */
