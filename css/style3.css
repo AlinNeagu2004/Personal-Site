@@ -4,9 +4,17 @@
   --clr-main-heading: #57ad93;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 body,
 figure {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -555,17 +563,20 @@ h3 {
 }
 
 #middle-container div {
+  position: relative;
   margin: 3em 0;
   background-color: var(--clr-main-heading);
   width: 100%;
   height: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #middle-container div h2 {
   color: white;
+  font-size: 1.7rem;
 }
 
 #middle-container .hello-section {
@@ -592,8 +603,35 @@ h3 {
   line-height: 1.5;
 }
 
+#contact-section div {
+  margin-bottom: 0;
+  min-height: 100%;
+}
+
+#contact-section div h2 {
+  position: absolute;
+  top: 0em;
+}
+
+#contact-section div h3 {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+#contact-section p {
+  width: 95%;
+  margin: 1em auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 /* I'm a Web Developer and i am also known by my friends to have great impersonal and artistic skills,that helped me to possess a lot of creativity and ambition over the years. I'll be always thirsty to work and contribute as deeply as possible to a project,  because I care doing it professionally. */
 
 /* I'm going to help you to think of an idea, to design and to create as quick as a flash then publishing it online.  */
 
 /* My goal is to make the finest version of your website, that you'll love and your customers will too. */
+
+/* I'm always happy to speak about things other than work so I'm open to discussions about podcasts, books, or sport! */
