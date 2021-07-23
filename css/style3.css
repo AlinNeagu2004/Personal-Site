@@ -604,24 +604,19 @@ h3 {
 }
 
 #contact-section div {
+  margin-bottom: 2em;
+}
+
+#contact-section h3 {
+  color: var(--clr-main-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
-#contact-section div h2 {
-  position: absolute;
-  top: 0em;
-}
-
-#contact-section div h3 {
-  color: #1c3d33;
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 0;
-}
-
 #contact-section p {
-  width: 95%;
-  margin: 1em auto;
+  width: 85%;
+  margin: 0.5em auto;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   line-height: 1.5;
@@ -643,21 +638,40 @@ h3 {
 
 #bottom-container {
   background-color: #1c3d33;
-  text-align: center;
   width: 100%;
-  position: relative;
-  padding: 3em;
-}
-
-#bottom-section section {
-  position: absolute;
-  bottom: 0;
+  height: 6.25em;
+  display: grid;
+  grid-template-areas:
+    "instagram linkedin github"
+    ". copyright .";
+  row-gap: 10px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
 
 #bottom-container a {
-  font-size: 0.5rem;
-  padding-right: 2em;
+  font-size: 0.7rem;
   color: var(--clr-main-heading);
+  font-family: "Montserrat", sans-serif;
+}
+
+#bottom-container a:first-child {
+  grid-area: instagram;
+}
+
+#bottom-container a:nth-child(2) {
+  grid-area: linkedin;
+}
+
+#bottom-container a:last-child {
+  grid-area: github;
+}
+
+#bottom-container p {
+  grid-area: copyright;
+  color: #eaf6f6;
+  font-size: 0.6rem;
   font-family: "Montserrat", sans-serif;
 }
 
