@@ -630,7 +630,7 @@ h3 {
 
 #contact-section .contact-me a {
   border-radius: 5px;
-  border: #1c3d33 solid 1px;
+  border: #000 solid 1px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -684,10 +684,24 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-/* I'm a Web Developer and i am also known by my friends to have great impersonal and artistic skills,that helped me to possess a lot of creativity and ambition over the years. I'll be always thirsty to work and contribute as deeply as possible to a project,  because I care doing it professionally. */
+/* Media query for Middle & Bottom container */
 
-/* I'm going to help you to think of an idea, to design and to create as quick as a flash then publishing it online.  */
+@media (min-width: 300px) {
+  .hello-section p {
+    width: 55%;
+  }
+}
 
-/* My goal is to make the finest version of your website, that you'll love and your customers will too. */
+@media (min-width: 375px) {
+  .hello-section p {
+    width: 80%;
+  }
 
-/* I'm always happy to speak about things other than work so I'm open to discussions about podcasts, books, or sport! */
+  #contact-section h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 500px) {
+}
