@@ -200,19 +200,25 @@ h3 {
 
   #top-container h1 {
     font-size: 4.8rem;
+    font-weight: 500;
   }
 
   #top-container .big-letter {
     font-size: 5.8rem;
   }
 
+  #top-container .small-letters {
+    letter-spacing: 0;
+  }
+
   #top-container h2 {
     font-size: 1.1em;
+    font-weight: 600;
   }
 
   #top-container .headings-container {
     margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5.5vh;
   }
 }
 
@@ -236,20 +242,14 @@ h3 {
 
   #top-container h1 {
     font-size: 6rem;
-    font-weight: 500;
   }
 
   #top-container .big-letter {
     font-size: 7.1004rem;
   }
 
-  #top-container .small-letters {
-    letter-spacing: 0;
-  }
-
   #top-container h2 {
     font-size: 1.3rem;
-    font-weight: 600;
   }
 
   #top-container .headings-container {
@@ -600,15 +600,11 @@ h3 {
   line-height: 1.5;
 }
 
-#contact-section div {
-  margin-bottom: 2em;
-}
-
 #contact-section h3 {
   color: var(--clr-main);
   font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 0;
+  margin: 3em 0 0;
 }
 
 #contact-section p {
@@ -620,7 +616,7 @@ h3 {
 }
 
 #contact-section .contact-me {
-  margin: 2em 0 3em;
+  margin: 2em 0 5em;
   display: flex;
   justify-content: center;
 }
@@ -681,19 +677,15 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Media query for Middle & Bottom container */
+/* Media query for Middle & Bottom containers */
 
 @media (min-width: 300px) {
-  .hello-section p {
-    width: 55%;
+  #middle-container .hello-section p {
+    width: 50%;
   }
 }
 
 @media (min-width: 375px) {
-  .hello-section p {
-    width: 80%;
-  }
-
   #contact-section h3 {
     font-size: 1rem;
     margin-bottom: 0.5em;
@@ -701,9 +693,37 @@ h3 {
 }
 
 @media (min-width: 500px) {
+  #middle-container p {
+    width: 60%;
+  }
+
+  #middle-container .hello-section p {
+    font-size: 1rem;
+  }
+
+  #middle-container #skills-section p {
+    font-size: 1rem;
+  }
+
+  #middle-container .hello-section h2 {
+    font-size: 1.7rem;
+  }
+
+  #middle-container #skills-section h3 {
+    font-size: 1.3rem;
+  }
+
+  #contact-section h3 {
+    font-size: 1.3rem;
+  }
+
+  #contact-section p {
+  }
+
   #contact-section .contact-me a:hover img {
     position: relative;
     bottom: 12px;
+    width: 2.2em;
   }
 
   #bottom-container {
@@ -721,5 +741,69 @@ h3 {
 
   #bottom-container p {
     font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #middle-container .hello-section {
+    margin: 5em 0 10em;
+  }
+
+  #middle-container .middle-headings {
+    height: 125px;
+    margin: 5em 0;
+  }
+
+  #contact-section .middle-headings {
+    margin-bottom: 4em;
+  }
+
+  #middle-container div h2 {
+    font-size: 2rem;
+  }
+
+  #middle-container .information-section p {
+    width: 50%;
+  }
+
+  #contact-section h3 {
+    font-size: 1.17rem;
+  }
+
+  #contact-section .contact-me a {
+    width: 125px;
+    height: 40px;
+  }
+
+  #contact-section .contact-me img {
+    width: 2.3em;
+  }
+
+  #contact-section .contact-me a:hover img {
+    bottom: 15px;
+    width: 2.5em;
+  }
+
+  #contact-section p {
+    font-size: 0.8rem;
+  }
+
+  #bottom-container {
+    gap: 20px;
+    height: 7.8125em;
+  }
+
+  #bottom-container a {
+    font-size: 0.9rem;
+  }
+
+  #bottom-container p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #middle-container .hello-section p {
+    width: 40%;
   }
 }
