@@ -585,7 +585,7 @@ h3 {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .information-section {
@@ -597,7 +597,7 @@ h3 {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 #contact-section h3 {
@@ -697,11 +697,8 @@ h3 {
     width: 60%;
   }
 
-  #middle-container .hello-section p {
-    font-size: 1rem;
-  }
-
-  #middle-container #skills-section p {
+  #middle-container .hello-section p,
+  #skills-section p {
     font-size: 1rem;
   }
 
@@ -717,7 +714,8 @@ h3 {
     font-size: 1.3rem;
   }
 
-  #contact-section p {
+  #middle-container #contact-section p {
+    font-size: 0.9rem;
   }
 
   #contact-section .contact-me a:hover img {
@@ -745,6 +743,63 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  #middle-container #skills-section .information-section .information-1,
+  #middle-container #skills-section .information-section .information-2 {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #middle-container #skills-section .information-section .information-1 h3,
+  #middle-container #skills-section .information-section .information-1 p {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  #middle-container #skills-section .information-section .information-1 h3 {
+    margin-bottom: 1em;
+  }
+
+  #middle-container
+    #skills-section
+    .information-section
+    img[alt="programming-img"] {
+    float: left;
+    margin-right: 2em;
+    shape-outside: circle(50%);
+  }
+
+  #middle-container #skills-section .information-section .information-2 {
+    text-align: right;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #middle-container #skills-section .information-section .information-2 h3,
+  #middle-container #skills-section .information-section .information-2 p {
+    text-align: right;
+    margin: 0;
+    width: 100%;
+  }
+
+  #middle-container #skills-section .information-section .information-2 h3 {
+    margin-bottom: 1em;
+  }
+
+  #middle-container #skills-section .information-section .information-2 {
+    margin-bottom: 6.5em;
+  }
+
+  #middle-container
+    #skills-section
+    .information-section
+    img[alt="dancing-img"] {
+    float: right;
+    margin-left: 2em;
+    shape-outside: circle(50%);
+  }
+
   #middle-container .hello-section {
     margin: 5em 0 10em;
   }
@@ -762,7 +817,7 @@ h3 {
     font-size: 2rem;
   }
 
-  #middle-container .information-section p {
+  #middle-container p {
     width: 50%;
   }
 
@@ -784,10 +839,6 @@ h3 {
     width: 2.5em;
   }
 
-  #contact-section p {
-    font-size: 0.8rem;
-  }
-
   #bottom-container {
     gap: 20px;
     height: 7.8125em;
@@ -803,7 +854,73 @@ h3 {
 }
 
 @media (min-width: 992px) {
+  #middle-container .hello-section p,
+  #skills-section p,
+  #contact-section p {
+    width: 40ch;
+  }
+
+  #middle-container #skills-section .information-section .information-1,
+  #middle-container #skills-section .information-section .information-2 {
+    width: 45%;
+  }
+
+  #middle-container img {
+    width: 11em;
+  }
+}
+
+@media (min-width: 1200px) {
+  #middle-container #skills-section .information-section .information-1 {
+    margin-bottom: 5em;
+  }
+  #middle-container #skills-section .information-section .information-1,
+  #middle-container #skills-section .information-section .information-2 {
+    width: 80ch;
+  }
+
+  #middle-container .hello-section {
+    margin-top: 10em;
+  }
+
+  #middle-container .hello-section h2 {
+    font-size: 2rem;
+  }
+
+  #middle-container p,
   #middle-container .hello-section p {
-    width: 40%;
+    font-size: 1.1rem;
+  }
+
+  #middle-container #skills-section h3 {
+    font-size: 1.4rem;
+  }
+
+  #middle-container .middle-headings {
+    width: 65%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 7em;
+  }
+
+  #middle-container .middle-headings {
+    margin-top: 10em;
+  }
+
+  #middle-container .middle-headings h2 {
+    font-size: 2.5rem;
+  }
+
+  #bottom-container {
+    height: 175px;
+  }
+
+  #bottom-container a {
+    font-size: 1rem;
+  }
+
+  #bottom-container p {
+    font-size: 0.9rem;
   }
 }
